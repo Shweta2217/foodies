@@ -1,0 +1,516 @@
+   .nav_main {
+       height: 625px;
+       width: 100%;
+       background: url(images/desktop_food.jpg);
+       background-repeat: no-repeat;
+       background-size: 100% 625px;
+   }
+   
+   .blueColor {
+       color: #004b9b;
+   }
+   
+   .headings {
+       text-align: center;
+       font-size: 3rem;
+       font-weight: bold;
+       margin: 30px;
+       color: #aa2024;
+   }
+   
+   .take_to_top {
+       border: white 2px solid;
+       border-radius: 100%;
+       background-color: #aa2024;
+       height: 9%;
+       width: 3.5rem;
+       position: fixed;
+       bottom: 1%;
+       right: 1%;
+       z-index: 1;
+   }
+   
+   .fa-arrow-up {
+       color: white;
+       padding: 9px 3px 2px 12px;
+       font-size: 2rem;
+   }
+   
+   .Warrning {
+       color: red;
+       visibility: hidden;
+       margin-bottom: 0px !important;
+   }
+   /* Navigation_bar */
+   
+   .nav_container {
+       padding: 2% 7%;
+   }
+   
+   .brandIcon {
+       height: 3rem;
+       width: 3rem;
+       margin-bottom: 15px;
+       border-radius: 50%;
+   }
+   
+   .navIconBG {
+       background-color: #aa2024;
+       border-radius: 10px;
+   }
+   
+   .Brand {
+       font-size: 1.8rem;
+       font-weight: bold;
+       color: white;
+   }
+   
+   .navbar_brand:hover {
+       color: white;
+   }
+   
+   .nav-link {
+       color: rgb(207, 204, 204);
+       cursor: pointer;
+       font-size: 1.4rem;
+       margin: 0 10px;
+   }
+   
+   .nav-link:hover {
+       color: white;
+   }
+   
+   .offcanvas {
+       background-color: #aa2024;
+       width: 50%;
+   }
+   /* Modal */
+   
+   .modalIcon_a {
+       text-decoration: none;
+   }
+   
+   .modal-header {
+       background-color: #aa2024!important;
+   }
+   
+   .modal-body {
+       text-align: center!important;
+   }
+   
+   .Form_heading {
+       margin: 10px 0 30px 0;
+       color: #aa2024;
+   }
+   
+   .Form_fields {
+       /* margin: 10px 0px; */
+       display: inline-block;
+       width: 80%;
+   }
+   
+   .inputBoxes {
+       outline: none;
+       background-color: rgb(239 239 239);
+       height: 2.4rem;
+       border: 1px solid gray;
+   }
+   
+   .passInput {
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+   }
+   
+   .usernameDiv {
+       display: grid;
+       grid-template-columns: 7% 1fr;
+   }
+   
+   .userInput {
+       border-radius: 5px;
+   }
+   
+   .loginIcons {
+       align-self: center;
+       font-size: 1.5rem;
+   }
+   
+   .passwordDiv {
+       display: grid;
+       grid-template-columns: 7% 1fr 10%;
+   }
+   
+   #password {
+       border-right: none!important;
+   }
+   
+   .showHide {
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+       outline: none;
+       border: 1px solid gray;
+       border-left: none;
+   }
+   
+   .logsignButton {
+       height: 2.5rem;
+       /* background-color: #007bff; */
+       background-color: #7aa6d6;
+       color: #fff;
+       border-radius: 5px;
+       /* border-color: gray; */
+       border: none;
+       font-weight: bold;
+       font-size: 1.2rem;
+   }
+   
+   .modalheaderWelcome {
+       background-color: #fff!important;
+   }
+   
+   .modalBody {
+       background-color: #aa2024;
+       height: 240px;
+   }
+   
+   .welcome {
+       color: white;
+       margin: 40px 0 20px 0;
+   }
+   
+   .Link_reg {
+       cursor: pointer;
+   }
+   
+   .orDiv {
+       display: grid;
+       grid-template-columns: 1fr 2% 1fr;
+       place-items: center;
+       margin: 20px 0;
+   }
+   
+   .span {
+       border-top: 1px solid gray;
+       display: inline-block;
+       height: 5px;
+       width: 80%;
+   }
+   
+   .fa-facebook {
+       font-size: 1.3rem!important;
+   }
+   
+   .logFB_text {
+       font-size: 1.2rem;
+   }
+   
+   .modalFooter_Text {
+       margin: auto;
+   }
+   
+   .phonenoDiv {
+       display: grid;
+       grid-template-columns: 20% 1fr;
+   }
+   
+   .signupInput {
+       border-radius: 5px;
+   }
+   
+   .fa-user-circle {
+       margin: 15px 0 5px 0;
+       font-size: 5rem;
+       color: #007bff;
+   }
+   
+   .signupModalBody {
+       height: 400px;
+   }
+   
+   .otpInput {
+       width: 80%;
+       margin-top: 20px;
+       border-radius: 5px;
+   }
+   
+   .Confirmation_Heading {
+       margin: 20px 0;
+       color: #aa2024;
+   }
+   /* main-section */
+   
+   .main_heading {
+       font-size: 4rem;
+       color: white;
+       text-align: center;
+   }
+   
+   .container_main {
+       padding: 5% 15%;
+   }
+   
+   .row_main {
+       margin-top: 88px;
+   }
+   
+   .search_select_box {
+       padding: 7px;
+       font-size: 1.2rem;
+   }
+   
+   .search_box {
+       width: 90%!important;
+       float: left;
+       position: relative;
+   }
+   
+   .search_icon_div {
+       display: inline-block;
+       position: relative;
+       width: 10%;
+       height: 100%;
+       color: white;
+       border-radius: 5%;
+       background-color: #5b99f6;
+       padding: 7px;
+       font-size: 1.2rem;
+       text-align: center;
+       cursor: pointer;
+   }
+   
+   .container {
+       margin-top: 87px;
+       padding: 0 20px;
+       width: 63rem;
+   }
+   /* Quick-View_Section */
+   
+   .Quick_image {
+       width: 100%;
+       height: 200px!important;
+   }
+   
+   .container_Quick {
+       padding: 2% 6%;
+   }
+   
+   .dot {
+       font-size: 7px;
+       color: #007bff;
+   }
+   /* COntainer-card */
+   
+   .card_container {
+       border: 3px solid #aa2024;
+       text-align: center;
+   }
+   
+   .card-header {
+       background-color: white!important;
+       border: none;
+   }
+   
+   .card-header>span {
+       font-size: 1.7rem!important;
+       color: white;
+       background-color: #aa2024!important;
+       margin: 0;
+       padding: 10px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+   }
+   
+   .row_quick {
+       margin-top: 40px;
+   }
+   
+   .card-title {
+       font-size: 1.6rem;
+       color: #aa2024;
+   }
+   
+   .card_feed {
+       margin: 5% 10%;
+       text-align: center;
+       border: none;
+   }
+   
+   .card_feed:hover {
+       box-shadow: 1px 1px 20px 10px rgb(228, 224, 224);
+       cursor: pointer;
+       margin: 4% 9%;
+   }
+   
+   .pagination_div {
+       display: inline-block;
+       text-align: center;
+   }
+   
+   .pagination {
+       margin-top: 20px;
+       text-align: center;
+       border-radius: 10px;
+   }
+   
+   .page-link {
+       color: #aa2024!important;
+       font-weight: bold;
+       font-size: 1.4rem!important;
+   }
+   /* testimonial-section */
+   
+   #testimonial {
+       text-align: center;
+       padding: 10px 10%;
+       height: 700px;
+   }
+   
+   .service_img {
+       height: 50%;
+       margin-top: 40px;
+       width: 30%;
+   }
+   
+   .box {
+       height: 500px;
+       color: white;
+       background-color: #aa2024;
+       border-radius: 10px;
+   }
+   
+   .box_subheading {
+       margin-top: 40px;
+       font-weight: bold;
+       font-size: 2.5rem;
+   }
+   
+   .service_text {
+       font-size: 1.5rem;
+   }
+   /* Footer-Section */
+   
+   .footer_container {
+       padding: 2% 10% 0% 10%;
+       background-color: rgb(177, 177, 177);
+   }
+   
+   .Links_row {
+       margin-top: 27px;
+   }
+   
+   .footer_headings {
+       margin: 20px 0px;
+   }
+   
+   .footer_links {
+       text-decoration: none;
+       color: black;
+   }
+   
+   .footer_links:hover {
+       color: white;
+   }
+   
+   .social_links {
+       font-size: 2rem;
+       margin-right: 4%;
+   }
+   
+   .social_links:hover {
+       color: white;
+   }
+   
+   .copyright_text {
+       text-align: center;
+       color: white;
+       background-color: #aa2024;
+       padding: 10px 0;
+       font-size: 1.2rem;
+   }
+   /* Media-Queries */
+   
+   @media(max-width:1020px) {
+       .offcanvas {
+           width: 30%;
+       }
+       .navbar-nav {
+           margin: 50px auto 0 auto;
+       }
+       .nav_container {
+           padding: 1% 5%;
+       }
+       .container_main {
+           padding: 5% 5% 2% 5%;
+       }
+       .main_heading {
+           font-size: 3.5rem;
+           margin-top: 30px;
+       }
+       .nav_main {
+           height: 530px;
+           width: 100%;
+           background: url(images/desktop_food.jpg);
+           background-repeat: no-repeat;
+           background-size: 100% 530;
+       }
+   }
+   
+   @media(max-width:600px) {
+       /* For-Quick-Search */
+       .card-header>span {
+           font-size: 1.4rem!important;
+       }
+       .main_heading {
+           font-size: 3rem;
+           margin-top: 30px;
+       }
+       /* Heading of Quick_search and services */
+       .headings {
+           font-size: 2.3rem;
+       }
+   }
+   
+   @media(max-width:560px) {
+       /* navbar */
+       .nav_main {
+           height: 580px;
+           width: 100%;
+           background-image: none;
+           background-color: #aa2024;
+       }
+       .offcanvas {
+           width: 50%;
+       }
+       .card_feed {
+           margin: 5% 20%;
+           text-align: center;
+           border: none;
+       }
+       .card_feed:hover {
+           box-shadow: 1px 1px 20px 10px rgb(228, 224, 224);
+           cursor: pointer;
+           margin: 4.5% 19.5%;
+       }
+       /* testimonial */
+       #testimonial {
+           height: 600px;
+       }
+       .box {
+           height: 400px;
+       }
+       .box_subheading {
+           font-size: 1.5rem;
+       }
+       .service_text {
+           font-size: 1rem;
+       }
+       .service_img {
+           height: 40%;
+           width: 40%;
+       }
+       /* footer */
+       .footer_container {
+           padding: 2% 10% 3% 10%;
+           text-align: center;
+       }
+   }

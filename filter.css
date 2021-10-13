@@ -1,0 +1,373 @@
+.take_to_top {
+    border: white 2px solid;
+    border-radius: 100%;
+    background-color: #aa2024;
+    height: 9%;
+    width: 3.5rem;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1;
+}
+
+.hr_filter {
+    margin-top: 10px;
+}
+
+.fa-arrow-up {
+    color: white;
+    padding: 9px 3px 2px 12px;
+    font-size: 2rem;
+}
+
+.offcanvas {
+    background-color: #aa2024;
+    width: 50%;
+}
+
+.navbar {
+    background-color: #aa2024;
+}
+
+.nav_container {
+    padding: 2% 10%;
+}
+
+.nav_brand_f {
+    padding: 0 10px !important;
+    border-radius: 50%;
+    color: #aa2024!important;
+    background-color: white;
+}
+
+.navbar_brand {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.navbar_brand:hover {
+    color: white;
+}
+
+.nav-link {
+    color: rgb(207, 204, 204);
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+/* ------------------------Filter-Section------------------------ */
+
+.container_filter {
+    padding: 1% 7%;
+}
+
+.heading_section {
+    text-align: center;
+}
+
+.main_heading {
+    display: inline-block;
+    width: 40%;
+    font-size: 2.3rem;
+    color: #aa2024;
+    margin: 5px auto 20px auto;
+}
+
+.main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+legend {
+    color: #aa2024;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.filter_sort {
+    border: #aa2024 2px solid;
+    background-color: white;
+    width: 27%;
+    float: left;
+}
+
+.fieldset {
+    margin: 0.3rem;
+}
+
+.filter {
+    margin: 1rem;
+}
+
+.filter_subheading {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #aa2024;
+    font-weight: bold;
+}
+
+.filter_select {
+    width: 80%;
+    height: 30px;
+    font-size: 1.2rem;
+    color: #00005a;
+    font-weight: bold;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container_items_filter {
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+}
+
+.data {
+    font-size: 1.2rem;
+    color: #00005a;
+    font-weight: bold;
+}
+
+.margin {
+    margin: 5px;
+}
+
+.filter_related_content {
+    margin-left: 5%;
+    display: inline-block;
+    width: 68%;
+}
+
+.hotel {
+    height: 230px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hotel:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 10px rgb(211, 207, 207);
+}
+
+.restro_img {
+    height: 200px;
+    float: left;
+    width: 30%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.restro_heading {
+    font-size: 2rem;
+    margin: 10px 0px 15px 15px;
+    color: #aa2024;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00005a;
+}
+
+.cityname {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #00005a
+}
+
+.about_restro {
+    color: #00005a;
+    font-weight: bold;
+}
+
+
+/* Footer-Section */
+
+.footer_container {
+    padding: 2% 10% 0% 10%;
+    background-color: rgb(177, 177, 177);
+}
+
+.Links_row {
+    margin-top: 27px;
+}
+
+.footer_headings {
+    margin: 20px 0px;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_links:hover {
+    color: white;
+}
+
+.social_links {
+    font-size: 2rem;
+    margin-right: 4%;
+}
+
+.social_links:hover {
+    color: white;
+}
+
+.copyright_text {
+    text-align: center;
+    color: white;
+    background-color: #aa2024;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+/* Media Quarries */
+
+@media(max-width:1020px) {
+    .offcanvas {
+        width: 30%;
+    }
+    .navbar-nav {
+        margin: 50px auto 0 auto;
+    }
+    .main_heading {
+        font-size: 2rem;
+    }
+    legend {
+        font-size: 1.5rem;
+    }
+    .filter_subheading {
+        font-size: 1.2rem;
+    }
+    .filter_select {
+        font-size: 1rem;
+    }
+    .data {
+        font-size: 1rem;
+    }
+    .filter_related_content {
+        margin-left: 2%;
+        display: inline-block;
+        width: 68%;
+    }
+    .hotel {
+        height: 180px;
+        line-height: 0.7;
+    }
+    .restro_img {
+        height: 150px;
+        width: 30%;
+    }
+    .restro_heading {
+        font-size: 1.5rem;
+        margin: 10px 0px 10px 15px;
+    }
+    .rating {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .cityname {
+        font-size: 1.2rem;
+    }
+    .about_restro {
+        font-weight: normal;
+    }
+}
+
+@media(max-width:820px) {
+    .container_filter {
+        padding: 1% 2%;
+    }
+    .main_heading {
+        width: 60%;
+    }
+    .filter_sort {
+        width: 30%;
+    }
+    .filter_related_content {
+        margin-left: 2%;
+        width: 68%;
+    }
+}
+
+@media(max-width:600px) {
+    .filter_sort {
+        border: #aa2024 2px solid;
+        background-color: white;
+        width: 100%
+    }
+    .container_filter {
+        padding: 1% 5%;
+    }
+    .filter_related_content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .hr_filter {
+        display: none;
+    }
+    .filter_select {
+        width: 80%;
+    }
+    .cuisin_items_location {
+        display: flex;
+    }
+    .container_items_filter {
+        display: flex;
+        line-height: 2;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .data_top {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:550px) {
+    .container_items_filter {
+        margin: 5px;
+    }
+}
+
+@media(max-width:420px) {
+    .offcanvas {
+        width: 50%;
+    }
+    .container_filter {
+        padding: 0%;
+    }
+    .container_items_filter {
+        margin: 1px;
+    }
+    .filter_subheading {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #aa2024;
+        font-weight: bold;
+    }
+    .filter_select {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-top: 5px;
+    }
+    .data {
+        font-size: 1rem;
+        color: #00005a;
+        font-weight: normal;
+    }
+    .margin {
+        margin: 5px;
+    }
+    #cuisine_heading {
+        padding-left: 15px;
+    }
+}
