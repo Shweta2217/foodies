@@ -1,5 +1,4 @@
 const showhidePass = document.querySelector(".showHide");
-
 const pswrd = document.querySelector("#password");
 const phoneNo = document.querySelector("#phnNo");
 
@@ -11,6 +10,7 @@ function showhide() {
         pswrd.type = "password";
     }
 }
+
 //User name Checking
 function usernamePhnnoChecking() {
     var userName = document.getElementById("userName");
@@ -60,8 +60,6 @@ function passChecking() {
         loginButton.removeAttribute("disabled");
     }
 }
-
-
 
 // PhoneNo. Checking For sign Up
 function PhnNo() {

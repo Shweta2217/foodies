@@ -19,7 +19,119 @@
 <body>
     <!-- Take to Top -->
     <span class="take_to_top  ">
-        <a href="#main__"><i class="fas fa-arrow-up"></i></a></span>
+        <a href="#main__"><i class="fas fa-arrow-up"></i></a>
+    </span>
+    <!------------------------------------ MODALS --------------------------------------->
+    <!-- Login-Modal -->
+    <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="modalIcon_a " href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="Form_heading">Log In</h2>
+                    <div class="Form_fields">
+                        <div class="usernameDiv">
+                            <i class="fas fa-user loginIcons"></i>
+                            <input type="text" id="userName" oninput="usernamePhnnoChecking()" class=" inputBoxes userInput" placeholder="Phone number,Email or Username">
+                        </div>
+                    </div>
+                    <p id="userWarrning" class="Warrning">!Warrning</p>
+                    <div class="Form_fields ">
+                        <div class="passwordDiv ">
+                            <i class="fas fa-lock loginIcons "></i>
+                            <input type="text " name="password" id="password" placeholder="Password " class="inputBoxes passInput ">
+                            <button class="showHide " onclick="showhide() "><i class="fas fa-eye "></i></button>
+                        </div>
+                        <p id="passWarrning" class="Warrning">! Incorrect password</p>
+                    </div>
+                    <button disabled id="loginButton" type="button" class="Form_fields logsignButton " onclick="passChecking()" data-bs-toggle="modal" data-bs-target="#Welcome">Log In</button>
+                    <p>Forgot your login details ? <span class="blueColor Link_reg ">Get help logging in.</span></p>
+                    <div class="orDiv ">
+                        <span class="span "></span>
+                        <span class="orText ">Or</span>
+                        <span class="span "></span>
+                    </div>
+                    <p class="blueColor Link_reg logFB_text "><span class=" fab fa-facebook "></span > Log in with Facebook</p>                       
+                </div>
+                <div class="modal-footer ">
+                    <p class="modalFooter_Text ">Don't have an account? <span data-bs-toggle="modal" data-bs-target="#signupModal" class="blueColor Link_reg ">Sign Up</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome after Log in  -->
+    <div class="modal fade" id="Welcome" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modalheaderWelcome">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modalBody">
+                    <h1 class="welcome">Welcome To</h1>
+                    <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- signUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body signupModalBody">
+                    <h2 class="Form_heading ">
+                        <div>Sign Up</div> <i class="fas fa-user-circle "></i></h2>
+                    <div class="Form_fields ">
+                        <div class="phonenoDiv ">
+                            <select name="selectCountry " id="selectCountry " class="inputBoxes signupInput ">
+                                    <option value="1 ">IN +91</option>
+                                    <option value="2 ">Afganistan +93</option>
+                                    <option value="3 ">Brazil +55</option>
+                                    <option value="4 ">Canada +1</option>
+                                </select>
+                            <input class="inputBoxes signupInput" oninput="PhnNo()" id="phnNo" type="text" placeholder="Phone number or email ">
+                        </div>
+                        <p id="noWarrning" class="Warrning">! Incorrect phone number </p>
+                    </div>
+                    <button disabled type="button " id="signupNextBtn" class="Form_fields logsignButton " data-bs-toggle="modal" data-bs-target="#signup_otp_Modal">Next</button>
+
+                </div>
+                <div class="modal-footer ">
+                    <p class="modalFooter_Text ">Already have account ? <span data-bs-toggle="modal" data-bs-target="#loginModal " class="blueColor Link_reg ">Log In</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enter OTP -->
+    <div class="modal fade" id="signup_otp_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body signupModalBody">
+                    <h3 class="Confirmation_Heading">Enter Confirmation Code</h3>
+                    <p>Enter the 6-digit conformation code we sent to entered number.
+                        <span class="blueColor Link_reg">Request A New One.</span> </p>
+                    <input class="inputBoxes otpInput" id="otpNo" oninput="otpVerification()" type="text" placeholder="Confirmation Code">
+                    <p id="otpWarrning" class="Warrning">! Incorrect OTP </p>
+                    <button disabled type="button " id="otpNext" onclick="welcome() " class="Form_fields logsignButton " data-bs-toggle="modal" data-bs-target="#Welcome">Next</button>
+                </div>
+                <div class="modal-footer">
+                    <p class="modalFooter_Text ">Already have account ? <span data-bs-toggle="modal" data-bs-target="#loginModal " class="blueColor Link_reg ">Log In</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- navbar -->
     <div class="nav_main" id="main__">
         <section class="container-fluid nav_container">
@@ -42,120 +154,6 @@
                     </div>
                 </div>
             </nav>
-            <!-- Login-Modal -->
-            <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <a class="modalIcon_a " href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h2 class="Form_heading">Log In</h2>
-                            <div class="Form_fields">
-                                <div class="usernameDiv">
-                                    <i class="fas fa-user loginIcons"></i>
-                                    <input type="text" id="userName" oninput="usernamePhnnoChecking()" class=" inputBoxes userInput" placeholder="Phone number,Email or Username">
-                                </div>
-                            </div>
-                            <p id="userWarrning" class="Warrning">!Warrning</p>
-                            <div class="Form_fields ">
-                                <div class="passwordDiv ">
-                                    <i class="fas fa-lock loginIcons "></i>
-                                    <input type="text " name="password" id="password" placeholder="Password " class="inputBoxes passInput ">
-                                    <button class="showHide " onclick="showhide() "><i class="fas fa-eye "></i></button>
-                                </div>
-                                <p id="passWarrning" class="Warrning">! Incorrect password</p>
-                            </div>
-                            <button disabled id="loginButton" type="button" class="Form_fields logsignButton " onclick="passChecking()" data-bs-toggle="modal" data-bs-target="#Welcome">Log In</button>
-                            <p>Forgot your login details ? <span class="blueColor Link_reg ">Get help logging in.</span></p>
-                            <div class="orDiv ">
-                                <span class="span "></span>
-                                <span class="orText ">Or</span>
-                                <span class="span "></span>
-                            </div>
-                            <p class="blueColor Link_reg logFB_text "><span class=" fab fa-facebook "></span > Log in with Facebook</p>                       
-                        </div>
-                        <div class="modal-footer ">
-                            <p class="modalFooter_Text ">Don't have an account? <span data-bs-toggle="modal" data-bs-target="#signupModal" class="blueColor Link_reg ">Sign Up</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Welcome after Log in  -->
-            <div class="modal fade" id="Welcome" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header modalheaderWelcome">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body modalBody">
-                            <h1 class="welcome">Welcome To</h1>
-                            <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- signUp Modal -->
-            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog ">
-                    <div class="modal-content ">
-                        <div class="modal-header ">
-                            <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body signupModalBody">
-                            <h2 class="Form_heading ">
-                                <div>Sign Up</div> <i class="fas fa-user-circle "></i></h2>
-
-
-                            <div class="Form_fields ">
-                                <div class="phonenoDiv ">
-                                    <select name="selectCountry " id="selectCountry " class="inputBoxes signupInput ">
-                                            <option value="1 ">IN +91</option>
-                                            <option value="2 ">Afganistan +93</option>
-                                            <option value="3 ">Brazil +55</option>
-                                            <option value="4 ">Canada +1</option>
-                                        </select>
-                                    <input class="inputBoxes signupInput" oninput="PhnNo()" id="phnNo" type="text" placeholder="Phone number or email ">
-                                </div>
-                                <p id="noWarrning" class="Warrning">! Incorrect phone number </p>
-                            </div>
-                            <button disabled type="button " id="signupNextBtn" class="Form_fields logsignButton " data-bs-toggle="modal" data-bs-target="#signup_otp_Modal">Next</button>
-
-                        </div>
-                        <div class="modal-footer ">
-                            <p class="modalFooter_Text ">Already have account ? <span data-bs-toggle="modal" data-bs-target="#loginModal " class="blueColor Link_reg ">Log In</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Enter OTP -->
-            <div class="modal fade" id="signup_otp_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <a class="modalIcon_a" href="#"> <img class="brandIcon" src="images/icon.png" alt="brandIcon"> <span class="Brand"> foodies!</span></a>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body signupModalBody">
-                            <h3 class="Confirmation_Heading">Enter Confirmation Code</h3>
-                            <p>Enter the 6-digit conformation code we sent to entered number.
-                                <span class="blueColor Link_reg">Request A New One.</span> </p>
-                            <input class="inputBoxes otpInput" id="otpNo" oninput="otpVerification()" type="text" placeholder="Confirmation Code">
-                            <p id="otpWarrning" class="Warrning">! Incorrect OTP </p>
-                            <button disabled type="button " id="otpNext" onclick="welcome() " class="Form_fields logsignButton " data-bs-toggle="modal" data-bs-target="#Welcome">Next</button>
-                        </div>
-                        <div class="modal-footer">
-                            <p class="modalFooter_Text ">Already have account ? <span data-bs-toggle="modal" data-bs-target="#loginModal " class="blueColor Link_reg ">Log In</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
             <!-- <Main-Section> -->
@@ -199,7 +197,7 @@
     </div>
 
     <!-- Quick-View_Section -->
-    <section class="container-fluid container_Quick " id="Quick_Search ">
+    <section class="container-fluid container_Quick " id="Quick_Search">
         <h1 class="headings ">Quick Search</h1>
 
         <div class="card card_container ">
@@ -293,41 +291,41 @@
             </div>
     </section>
     <!-- Features -->
-    <section id="testimonial ">
+    <section id="testimonial">
         <div class="headings ">
             Our Services
         </div>
-        <div id="services " class="carousel slide carousel-fade " data-bs-pause="false " data-bs-interval="2000 " data-bs-ride="carousel ">
-            <div class="carousel-inner ">
-                <div class="carousel-item active ">
+        <div id="services" class="carousel slide carousel-fade" data-bs-pause="false" data-bs-interval="3000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <div class="box ">
-                        <img class="service_img " src="images/chef.gif " alt="MyOnlineMeal ">
-                        <h2 class="box_subheading ">Food Catring</h2>
-                        <p class="service_text "> Best Food Catring Provider !</p>
+                        <img class="service_img" src="images/chef.gif" alt="MyOnlineMeal">
+                        <h2 class="box_subheading">Food Catring</h2>
+                        <p class="service_text"> Best Food Catring Provider !</p>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <div class="box ">
-                        <img class="service_img " src="images/yellow-cab-yellow-cab-pizza.gif " alt="MyOnlineMeal ">
-                        <h2 class="box_subheading ">Food Odering</h2>
-                        <p class="service_text ">Service Of Online Delisious Food Odering !</p>
+                <div class="carousel-item">
+                    <div class="box">
+                        <img class="service_img" src="images/yellow-cab-yellow-cab-pizza.gif" alt="MyOnlineMeal">
+                        <h2 class="box_subheading">Food Odering</h2>
+                        <p class="service_text">Service Of Online Delisious Food Odering !</p>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <div class="box ">
-                        <img class="service_img " src="images/delivery.gif " alt="MyOnlineMeal ">
-                        <h2 class="box_subheading ">Fast Delivery</h2>
-                        <p class="service_text ">Fastest Delivery Ever !</p>
+                <div class="carousel-item">
+                    <div class="box">
+                        <img class="service_img" src="images/delivery.gif" alt="MyOnlineMeal">
+                        <h2 class="box_subheading">Fast Delivery</h2>
+                        <p class="service_text">Fastest Delivery Ever !</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev " type="button " data-bs-target="#services " data-bs-slide="prev ">
-                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-                <span class="visually-hidden ">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#services" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next " type="button " data-bs-target="#services " data-bs-slide="next ">
-                <span class="carousel-control-next-icon " aria-hidden="true "></span>
-                <span class="visually-hidden ">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#services" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
